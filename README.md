@@ -13,3 +13,4 @@ $ make
 
 ``
 $ ./main.o [d/c] <inputfile> <outputfile>
+``
