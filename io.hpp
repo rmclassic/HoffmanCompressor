@@ -13,7 +13,7 @@ char* ReadFile(const char* filename, size_t* size)
   int filesize = GetFileSize(filename);
   *size = filesize;
 
-  ifstream file(filename);
+  ifstream file(filename, ios::binary);
   if (!file)
   {
     cout << "File not found\n";
@@ -27,7 +27,7 @@ char* ReadFile(const char* filename, size_t* size)
 
 void WriteFile(const char* filename, char* data, int size)
 {
-  ofstream file(filename);
+  ofstream file(filename, ios::binary);
   file.write(data, size);
 }
 #endif
