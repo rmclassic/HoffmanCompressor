@@ -31,5 +31,3 @@ parser:
 
 util:
 	$(CC) -o bin/util.o util.hpp
-
-	$(CC) -o bin/util.o util.hpp
